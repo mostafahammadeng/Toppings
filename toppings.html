@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+            background: linear-gradient(to right, black, blue);
+            text-align: center;
+        }
+        h1 {
+            color: aqua;
+        }
+        p{
+            color: white;
+        }
+        a{
+            color: burlywood;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 250px;
+            animation: float 3s infinite;
+        }
+        @keyframes float{
+            0%{transform: translateY(0);}
+            50%{transform: translateY(-15px);}
+            100%{transform: translateY(0);}
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap:10%;
+            color:white;
+        }
+        @media (max-width: 600px){
+            .grid{
+                grid-template-columns: 1fr;
+            }
+            img {
+                width: 120px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+    <title>Messi</title>
+</head>
+<body>
+    <div class="container">
+       <h1>Messi</h1>
+       <p>Messi is a professional footballer who plays as a forward for Paris Saint-Germain and the Argentina national team. He is widely regarded as one of the greatest football players of all time.</p>
+       <img src="https://imgs.search.brave.com/g9aKTeiy39AB9_ENF0yfPX4jrnqLFprxjFThtRyWX6o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTYy/NzE1MjI2OS9waG90/by9oYXJyaXNvbi1u/ZXctamVyc2V5LWxp/b25lbC1tZXNzaS1v/Zi1pbnRlci1taWFt/aS1sb29rcy1iYWNr/LXRvLXRoZS1nb2Fs/LWluLXRoZS1zZWNv/bmQtaGFsZi1vZi5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/ZzZNUTBnSTI5VTFG/ZEpxbHdhTDF1VENt/MlhGSjN4a1FHek9J/Xy1hc0R4cz0"><br>
+       <a href="https://en.wikipedia.org/wiki/Lionel_Messi">Learn more about Messi</a>
+       <a href="https://www.instagram.com/mostafa_.hammad/">My instagram</a>
+    </div>
+    <div class="grid">
+        <div>8 ballon d'or</div>
+        <div>world cup 2022</div>
+        <div>+800 goals</div>
+    </div>
+</body>
+</html>
